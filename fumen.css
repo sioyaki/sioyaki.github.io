@@ -1,0 +1,20 @@
+.btn{
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+.btn a{
+  display: block;
+  overflow: hidden;
+  width: 400px;
+  height: 60px;
+  background-image: url("images/btn-sprite.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  text-align: left;
+  text-indent: -9999px;
+}
+.btn a:hover{
+  background-position: left bottom;
+}
