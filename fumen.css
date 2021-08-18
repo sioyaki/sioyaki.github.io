@@ -8,7 +8,7 @@ color: #ffffff;
 }
 
 h2 {
-color: #ffd700;
+color: #ccffcc;
 }
 
 p {
@@ -25,11 +25,11 @@ padding: 8px;
 }
 
 header {
-background-color: #ffd700;
+background-color: #ccffcc;
 }
 
 div#content {
-background-color: #ff7f50;
+background-color: #ffd700;
 width: 760px;
 overflow: hidden;
 }
@@ -42,7 +42,7 @@ float: right;
 
 nav {
 color: #339933;
-background-color: #ff7f50;
+background-color: #ffd700;
 width: 144px;
 float: left;
 }
@@ -52,11 +52,11 @@ color: #ffffff;
 }
 
 nav a:visited {
-color: #ccffcc;
+color: #ffd700;
 }
 
 nav a:hover {
-color: #339933;
+color: #ccffcc;
 }
 
 nav li {
@@ -65,5 +65,5 @@ line-height: 2em;
 
 footer {
 color: #ffffff;
-background-color: #ffd700;
+background-color: #ccffcc;
 }
