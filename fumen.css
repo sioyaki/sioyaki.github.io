@@ -8,7 +8,7 @@ color: #ffffff;
 }
 
 h2 {
-color: #ccffcc;
+color: #ffd700;
 }
 
 p {
@@ -25,11 +25,11 @@ padding: 8px;
 }
 
 header {
-background-color: #ccffcc;
+background-color: #ffd700;
 }
 
 div#content {
-background-color: #ffd700;
+background-color: #ff7050;
 width: 760px;
 overflow: hidden;
 }
@@ -65,5 +65,5 @@ line-height: 2em;
 
 footer {
 color: #ffffff;
-background-color: #ccffcc;
+background-color: #ffd700;
 }
