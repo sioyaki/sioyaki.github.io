@@ -29,7 +29,8 @@ background-color: #ff4500;
 }
 
 div#content {
-background-color: #ffd700;
+background-color:#ffd700;
+text-shadow:1px 0 5px black;
 width: 760px;
 overflow: hidden;
 }
@@ -43,6 +44,7 @@ float: right;
 nav {
 color: #339933;
 background-color: #ffd700;
+text-shadow:1px 0 5px black;
 width: 144px;
 float: left;
 }
@@ -52,6 +54,7 @@ color: #ffffff;
 }
 
 nav a:visited {
+text-shadow:1px 0 5px black;
 color: #ffd700;
 }
 
