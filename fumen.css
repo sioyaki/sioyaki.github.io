@@ -9,7 +9,7 @@ color: #ffffff;
 
 h2 {
 color: #ffd700;
-text-shadow:1px 0 5px black;
+text-shadow:1px 0 0 #000,0 1px 0 #000,-1px 0 0 #000,0 -1px 0 #000;
 }
 
 p {
@@ -44,7 +44,6 @@ float: right;
 nav {
 color: #339933;
 background-color: #ffd700;
-text-shadow:1px 0 5px black;
 width: 144px;
 float: left;
 }
