@@ -25,11 +25,11 @@ padding: 8px;
 }
 
 header {
-background-color: #ffd700;
+background-color: #ff4500;
 }
 
 div#content {
-background-color: #ff4500;
+background-color: #ffd700;
 width: 760px;
 overflow: hidden;
 }
@@ -65,5 +65,5 @@ line-height: 2em;
 
 footer {
 color: #ffffff;
-background-color: #ffd700;
+background-color: #ff4500;
 }
