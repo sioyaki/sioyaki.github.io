@@ -68,3 +68,8 @@ footer {
 color: #ffffff;
 background-color: #ff4500;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
