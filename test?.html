@@ -1,0 +1,107 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+var searchBox = '.search-box';
+var searchItem = '.search-box input';
+var listItem = '.cat_image';
+var hideClass = 'is-hide';
+
+$(function() {
+	$(searchItem).on('change', function() {
+		search_filter();
+	});
+});
+
+function search_filter() {
+	$(listItem).removeClass(hideClass);
+	for (var i = 0; i < $(searchBox).length; i++) {
+		var name = $(searchBox).eq(i).find('input').attr('name');
+		var searchData = selected_items(name);
+		if(searchData.length === 0 || searchData[0] === '') {
+			continue;
+		}
+		for (var j = 0; j < $(listItem).length; j++) {
+			var itemData = $(listItem).eq(j).data(name);
+			if(searchData.indexOf(itemData) === -1) {
+				$(listItem).eq(j).addClass(hideClass);
+			}
+		}
+	}
+}
+
+function selected_items(name) {
+	var searchData = [];
+	$('input[name=' + name + ']:checked').each(function() {
+		searchData.push($(this).val());
+	});
+	return searchData;
+}
+</script>
+
+<style>
+.search-box_title{
+	font-weight: bold;
+}
+.search-box label {
+	cursor: pointer;
+	display: inline-block;
+	margin-right: 10px;
+	line-height: 16px;
+}
+.search-box input[type="radio"] {
+	width: 16px;
+	height: 16px;
+	margin: -2px 5px 0 0;
+	padding: 0;
+	box-sizing: border-box;
+	vertical-align: middle;
+}
+.search-box input[type="checkbox"] {
+	width: 16px;
+	height: 16px;
+	margin: -2px 5px 0 0;
+	padding: 0;
+	box-sizing: border-box;
+	vertical-align: middle;
+}
+.cat_image_all {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 680px;
+	margin: 3em auto 0;
+}
+.cat_image {
+	width: 48%;
+	max-width: 320px;
+	margin: 0 0 2em;
+}
+.cat_image.is-hide {
+	display: none;
+}
+.cat_image a {
+	display: block;
+	color: #444;
+}
+.cat_image a:hover {
+	text-decoration: underline;
+}
+</style>
+
+<div class="search-box">
+        <span class="search-box_title">絞り込み条件のタイトル：</span>
+	<label><input type="radio" name="shop" value="">全て</label>
+ <label><input type="radio" name="shop" value="shop1">絞り込み条件1</label><label><input type="radio" name="shop" value="shop2">絞り込み条件2</label><label><input type="radio" name="shop" value="shop3">絞り込み条件3</label><label><input type="radio" name="shop" value="shop4">絞り込み条件4</label>
+</div>
+<div class="search-box">
+	<span class="search-box_title">絞り込み条件のタイトル：</span>
+	<label><input type="checkbox" name="category" value="category1">絞り込み条件a</label><label><input type="checkbox" name="category" value="category2">絞り込み条件b</label><label><input type="checkbox" name="category" value="category3">絞り込み条件c</label><label><input type="checkbox" name="category" value="category4">絞り込み条件d</label><label><input type="checkbox" name="category" value="category5">絞り込み条件e</label>
+</div>
+<div class="cat_image_all">
+	<div class="cat_image" data-shop="shop1" data-category="category1">
+		<a href="リンク先のURL">
+		<img src="画像のURL" alt="画像の説明">
+		<p class="page_title">テキストリンクのテキスト</p>
+		</a>
+	</div>
+</div>
+
