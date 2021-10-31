@@ -19,6 +19,7 @@ line-height: 2em;
 p.hl {
 font-size: 1.25em;
 color: #ffffff;
+text-shadow:1px 0 0 #000,0 1px 0 #000,-1px 0 0 #000,0 -1px 0 #000;
 }
 
 header, div#main, nav, footer {
@@ -37,6 +38,7 @@ overflow: hidden;
 
 div#main {
 background-color: #ffffff;
+text-shadow:1px 0 0 #000,0 1px 0 #000,-1px 0 0 #000,0 -1px 0 #000;
 width: 584px;
 float: right;
 }
